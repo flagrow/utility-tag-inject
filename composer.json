@@ -1,0 +1,32 @@
+{
+    "name": "flagrow/utility-tag-inject",
+    "description": "Adds utility/helper tags to the tag tree structure.",
+    "keywords": [
+        "extension",
+        "flarum",
+        "flagrow",
+        "tags"
+    ],
+    "type": "flarum-extension",
+    "license": "mit",
+    "authors": [
+        {
+            "name": "Daniël Klabbers",
+            "email": "daniel@klabbers.email",
+            "homepage": "http://luceos.com"
+        }
+    ],
+    "require": {
+        "flarum/core": "^0.1.0-beta.7"
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Flagrow Utility Tag Inject"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Flagrow\\InjectUtilityTags\\": "src/"
+        }
+    }
+}
