@@ -18,7 +18,10 @@ class Assets
     public function assets(ConfigureClientView $event)
     {
         if ($event->isForum()) {
-            $event->addAssets(__DIR__ . '/../js/forum/dist/extension.js');
+            $event->addAssets([
+                __DIR__ . '/../less/tag-utility-link-button.less',
+                __DIR__ . '/../js/forum/dist/extension.js'
+            ]);
             $event->addBootstrapper('flagrow/utility-tag-inject/main');
         }
     }
